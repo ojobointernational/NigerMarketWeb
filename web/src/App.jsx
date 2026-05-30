@@ -3,6 +3,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { AuthProvider, useAuth } from './context/AuthContext';
+import PaymentVerify from './pages/customer/PaymentVerify';
 
 // Auth pages
 import Login from './pages/auth/Login';
@@ -90,6 +91,7 @@ function AppRoutes() {
           <Route path="/cart"     element={<PrivateRoute><Cart /></PrivateRoute>} />
           <Route path="/checkout" element={<PrivateRoute><Checkout /></PrivateRoute>} />
           <Route path="/orders"   element={<PrivateRoute><Orders /></PrivateRoute>} />
+          <Route path="/payment/verify" element={<PrivateRoute><PaymentVerify /></PrivateRoute>} />
 
           {/* Seller routes */}
           <Route path="/seller"         element={<SellerRoute><SellerDashboard /></SellerRoute>} />
