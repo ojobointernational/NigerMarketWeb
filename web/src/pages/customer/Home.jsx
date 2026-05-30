@@ -144,7 +144,8 @@ export default function Home() {
             ))}
           </div>
         )}
-        {/* Support Section */}
+      </div>
+      {/* Support Section */}
 <div className="support-section">
   <h3>Need Help?</h3>
   <p>
@@ -156,7 +157,6 @@ export default function Home() {
     📞 Call 08077876818
   </a>
 </div>
-      </div>
 
       <style>{`
         .hero {
