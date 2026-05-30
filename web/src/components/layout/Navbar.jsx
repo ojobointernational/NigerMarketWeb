@@ -187,7 +187,10 @@ export default function Navbar() {
           align-items: center; justify-content: center;
           padding: 0 4px;
         }
-        .user-menu { position: relative; }
+        .user-menu {
+             position: relative;
+             padding-bottom: 8px; /* keeps hover active while moving to dropdown */
+        }
         .user-btn {
           display: flex; align-items: center; gap: 8px;
           padding: 6px 12px; border-radius: 999px;
@@ -205,12 +208,17 @@ export default function Navbar() {
         }
         .user-name { font-size: 14px; font-weight: 600; color: var(--gray-700); }
         .user-dropdown {
-          display: none; position: absolute;
-          top: calc(100% + 8px); right: 0;
-          background: white; border-radius: var(--radius-md);
-          box-shadow: var(--shadow-lg);
-          border: 1px solid var(--gray-200);
-          min-width: 220px; overflow: hidden; z-index: 100;
+            display: none;
+            position: absolute;
+            top: 100%; /* removes hover gap */
+            right: 0;
+            background: white;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--gray-200);
+            min-width: 220px;
+            overflow: hidden;
+            z-index: 9999;
         }
         .user-menu:hover .user-dropdown { display: block; }
         .dropdown-header {
