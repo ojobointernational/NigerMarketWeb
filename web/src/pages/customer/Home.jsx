@@ -222,6 +222,43 @@ export default function Home() {
           color: var(--gray-700); background: white;
           cursor: pointer;
         }
+          .support-section {
+            margin-top: 48px;
+            padding: 32px;
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 16px;
+            text-align: center;
+            }
+
+            .support-section h3 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: #166534;
+            }
+
+            .support-section p {
+            max-width: 600px;
+            margin: 0 auto 20px;
+            color: #4b5563;
+            line-height: 1.6;
+            }
+
+            .support-btn {
+            display: inline-block;
+            background: #16a34a;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 999px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: 0.2s ease;
+            }
+
+            .support-btn:hover {
+            background: #15803d;
+            }
       `}</style>
     </div>
   );
