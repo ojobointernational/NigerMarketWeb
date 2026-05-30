@@ -144,6 +144,18 @@ export default function Home() {
             ))}
           </div>
         )}
+        {/* Support Section */}
+<div className="support-section">
+  <h3>Need Help?</h3>
+  <p>
+    If you have any enquiries, payment issues, delivery concerns, or need
+    assistance using NaijaMarket, we're here to help.
+  </p>
+
+  <a href="tel:08077876818" className="support-btn">
+    📞 Call 08077876818
+  </a>
+</div>
       </div>
 
       <style>{`
